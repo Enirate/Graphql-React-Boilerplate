@@ -1,0 +1,22 @@
+{
+  "name": "graphql-yoga-backend",
+  "version": "1.0",
+  "description": "GraphQL-YOGA Boilerplate with mongodb",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "yarn run test",
+    "dev": "nodemon --exec babel-node src/index.js",
+    "build": "NODE_ENV=PRODUCTION babel src -d dist --copy-files",
+    "serve": "NODE_ENV=production node dist/index.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.14.12",
+    "mongoose": "^5.2.4"
+  }
+}
